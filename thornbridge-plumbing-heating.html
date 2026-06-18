@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thornbridge Plumbing & Heating — Old Fashioned Service in a Modern World</title>
+    <meta name="description" content="Serving Whitby & Durham Region for 27 Years. Trustworthy, family-run master plumber plumbing and heating company.">
+
+    <!-- Tailwind CSS Play -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Playfair Display & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font & Theme Setup -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        navy: '#1B2A4A',
+                        slateSteel: '#3D5A80',
+                        warmBrass: '#B08D57',
+                        offWhite: '#F7F5F1',
+                        charcoal: '#22262E',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F7F5F1;
+            color: #22262E;
+        }
+        /* Custom focus rings */
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+            outline: 2px solid #B08D57;
+            outline-offset: 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[#F7F5F1] text-[#22262E] font-sans antialiased selection:bg-[#B08D57]/30 selection:text-[#1B2A4A]">
+
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-[#1B2A4A] text-[#F7F5F1] border-b border-[#B08D57]/20 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-4 flex items-center justify-between">
+            
+            <!-- Logo Area -->
+            <a href="#home" class="flex items-center space-x-3 group cursor-pointer">
+                <div class="relative w-10 h-10 bg-gradient-to-tr from-[#B08D57] to-[#d6b785] rounded-lg flex items-center justify-center shadow-md">
+                    <!-- Custom SVG representing skyline and coupling joints -->
+                    <svg class="w-6 h-6 text-[#1B2A4A]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 14h5v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 18v-4h5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="12" cy="12" r="3" fill="#1B2A4A" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 4v5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                    <div class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-[#F7F5F1] border-2 border-[#1B2A4A] rounded-full flex items-center justify-center text-[8px] font-bold text-[#1B2A4A]">27</div>
+                </div>
+                <div>
+                    <div class="font-serif text-lg sm:text-xl font-bold tracking-tight text-[#F7F5F1] group-hover:text-[#B08D57] transition-colors">
+                        Thornbridge
+                    </div>
+                    <div class="text-[9px] sm:text-[10px] tracking-widest font-semibold uppercase text-[#B08D57] -mt-1">
+                        Plumbing & Heating
+                    </div>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-1 xl:space-x-4 text-sm font-semibold tracking-wide">
+                <a href="#services" class="px-3 py-2 text-gray-300 hover:text-[#B08D57] transition-colors">Plumbing & Heating</a>
+                <a href="#drainage" class="px-3 py-2 text-gray-300 hover:text-[#B08D57] transition-colors">Drainage & Water</a>
+                <a href="#products" class="px-3 py-2 text-gray-300 hover:text-[#B08D57] transition-colors">Products</a>
+                <a href="#backflow" class="px-3 py-2 text-gray-300 hover:text-[#B08D57] transition-colors">Backflow Testing</a>
+                <a href="#green-initiatives" class="px-3 py-2 text-gray-300 hover:text-[#B08D57] transition-colors">Green Initiatives</a>
+                <a href="#rebates-advice" class="px-3 py-2 text-gray-300 hover:text-[#B08D57] transition-colors">City Rebates & Advice</a>
+                <a href="#contact" class="px-3 py-2 text-gray-300 hover:text-[#B08D57] transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Phone Action -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="tel:+19056682417" class="flex items-center space-x-2 bg-gradient-to-r from-[#B08D57] to-[#c2a16a] hover:from-[#9A7742] hover:to-[#B08D57] text-[#1B2A4A] hover:text-[#F7F5F1] font-bold py-2.5 px-4 rounded shadow-sm text-sm transition-all duration-300 transform hover:-translate-y-0.5">
+                    <!-- Phone Icon Inline -->
+                    <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.824-1.806-5.122-4.104-6.928-6.928l1.293-.97c.363-.271.527-.834.417-1.173L6.914 2.22c-.125-.501-.575-.852-1.091-.852H3.75A2.25 2.25 0 001.5 3.75v14.25h.75z"/></svg>
+                    <span>(905) 668-2417</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu button -->
+            <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-gray-300 hover:text-white focus:outline-none">
+                <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#1B2A4A] border-t border-[#B08D57]/20">
+            <div class="px-4 pt-3 pb-6 space-y-2 flex flex-col">
+                <a href="#services" onclick="toggleMobileMenu()" class="w-full text-left py-2.5 px-3 rounded hover:bg-[#3D5A80]/30 text-[#F7F5F1] font-medium transition-colors">Plumbing & Heating</a>
+                <a href="#drainage" onclick="toggleMobileMenu()" class="w-full text-left py-2.5 px-3 rounded hover:bg-[#3D5A80]/30 text-[#F7F5F1] font-medium transition-colors">Drainage & Water Lines</a>
+                <a href="#products" onclick="toggleMobileMenu()" class="w-full text-left py-2.5 px-3 rounded hover:bg-[#3D5A80]/30 text-[#F7F5F1] font-medium transition-colors">Products</a>
+                <a href="#backflow" onclick="toggleMobileMenu()" class="w-full text-left py-2.5 px-3 rounded hover:bg-[#3D5A80]/30 text-[#F7F5F1] font-medium transition-colors">Backflow Testing</a>
+                <a href="#green-initiatives" onclick="toggleMobileMenu()" class="w-full text-left py-2.5 px-3 rounded hover:bg-[#3D5A80]/30 text-[#F7F5F1] font-medium transition-colors">Green Initiatives</a>
+                <a href="#rebates-advice" onclick="toggleMobileMenu()" class="w-full text-left py-2.5 px-3 rounded hover:bg-[#3D5A80]/30 text-[#F7F5F1] font-medium transition-colors">City Rebates & Advice</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="w-full text-left py-2.5 px-3 rounded hover:bg-[#3D5A80]/30 text-[#F7F5F1] font-medium transition-colors">Contact</a>
+                <div class="pt-4 border-t border-[#B08D57]/20">
+                    <a href="tel:+19056682417" class="flex items-center justify-center space-x-2 bg-[#B08D57] text-[#1B2A4A] font-bold py-3 rounded text-center shadow-md">
+                        <span>Call (905) 668-2417</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative overflow-hidden pt-8 md:pt-16 pb-12 sm:pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <!-- Left Info Area -->
+            <div class="lg:col-span-5 flex flex-col justify-center space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-[#1B2A4A] text-[#B08D57] font-mono text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full self-start shadow-sm border border-[#B08D57]/30">
+                    <span>EST. 1999 — 27 YEARS OF EXCELLENCE</span>
+                </div>
+                
+                <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-[#1B2A4A] leading-[1.15]">
+                    Old Fashioned Service <br/>
+                    <span class="text-[#B08D57] italic font-medium">in a Modern World</span>
+                </h1>
+
+                <p class="font-sans text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
+                    Proudly serving Whitby, Brooklin, Oshawa, and across the Durham Region, Ontario. As a family-run business for 27 years, we mix time-tested craftsmanship with modern green plumbing innovations.
+                </p>
+
+                <!-- Simple bullet highlights -->
+                <ul class="text-sm text-gray-600 space-y-2 pt-2">
+                    <li class="flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-[#B08D57] shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                        <span>Fully Licensed, Bonded, and Insured Master Plumbers</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-[#B08D57] shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                        <span>Durham Region Backflow Prevention Approved Tester</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-[#B08D57] shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                        <span>Emergency Local Callouts & Dedicated Advice Channel</span>
+                    </li>
+                </ul>
+
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 pt-3">
+                    <a href="#contact" class="bg-[#1B2A4A] hover:bg-[#3D5A80] text-white font-semibold py-3 px-6 rounded shadow-md text-center transition-all">
+                        Request Local Service
+                    </a>
+                    <a href="tel:+19056682417" class="flex items-center justify-center space-x-2 text-[#1B2A4A] hover:text-[#B08D57] border-2 border-[#1B2A4A]/20 hover:border-[#B08D57] font-semibold py-3 px-6 rounded transition-all bg-white/50 text-center">
+                        <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M22.5 12H18a3 3 0 00-6 0H1.5M22.5 12a9 9 0 01-18 0M22.5 12h-4.5"/></svg>
+                        <span>Direct: (905) 668-2417</span>
+                    </a>
+                </div>
+                
+                <!-- Quick stats -->
+                <div class="grid grid-cols-3 gap-4 pt-6 border-t border-[#B08D57]/20 max-w-md">
+                    <div>
+                        <div class="font-serif text-2xl font-bold text-[#1B2A4A]">27+</div>
+                        <div class="text-[11px] uppercase tracking-wide text-gray-500 font-semibold font-mono">Years Active</div>
+                    </div>
+                    <div>
+                        <div class="font-serif text-2xl font-bold text-[#1B2A4A]">Whitby</div>
+                        <div class="text-[11px] uppercase tracking-wide text-gray-500 font-semibold font-mono">Home Base</div>
+                    </div>
+                    <div>
+                        <div class="font-serif text-2xl font-bold text-[#1B2A4A]">100%</div>
+                        <div class="text-[11px] uppercase tracking-wide text-gray-500 font-semibold font-mono">Guaranteed</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asymmetric Image Grid Right Column -->
+            <div class="lg:col-span-7 select-none relative">
+                
+                <!-- Floating Serif Plate -->
+                <div class="absolute z-20 -top-4 -left-4 sm:-left-6 md:-left-8 bg-[#1B2A4A]/95 scale-95 sm:scale-100 backdrop-blur-md border-2 border-[#B08D57] p-5 sm:p-6 rounded-lg shadow-2xl max-w-xs hidden sm:block transform -rotate-1">
+                    <span class="font-mono text-[10px] text-[#B08D57] font-bold tracking-widest uppercase block mb-1">Local Trade Authority</span>
+                    <h3 class="font-serif text-xl font-semibold text-[#F7F5F1] leading-tight mb-2">
+                        "Old Fashioned Service <br/>
+                        <span class="text-[#B08D57] italic">in a Modern World"</span>
+                    </h3>
+                    <div class="h-[1px] w-12 bg-[#B08D57]/50 my-2"></div>
+                    <p class="text-xs text-gray-300">
+                        Celebrating 27 Years supporting homeowners across Whitby and Durham Region.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-12 gap-4">
+                    <!-- Large Image Panel -->
+                    <div class="col-span-7 relative h-[300px] sm:h-[450px] overflow-hidden rounded-lg shadow-xl border-2 border-[#B08D57]/10">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?auto=format&fit=crop&q=80&w=1200" alt="Water pipes" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white z-10">
+                            <span class="sm:hidden font-serif text-xs text-[#B08D57] block mb-0.5">Est. 1999 — 27 Years</span>
+                            <div class="font-serif text-base sm:text-lg font-semibold tracking-wide">Handcrafted Copper Layup</div>
+                            <p class="text-[10px] sm:text-xs text-gray-200 mt-0.5">Time-tested mechanical design</p>
+                        </div>
+                    </div>
+
+                    <!-- Small stacked images -->
+                    <div class="col-span-5 flex flex-col justify-between h-[300px] sm:h-[450px] space-y-4">
+                        <div class="h-1/2 relative overflow-hidden rounded-lg shadow-lg border-2 border-[#B08D57]/10 flex-grow">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800" alt="Modern installation boiler" class="w-full h-full object-cover">
+                        </div>
+                        <div class="h-1/2 relative overflow-hidden rounded-lg shadow-lg border-2 border-[#B08D57]/10 flex-grow">
+                            <img src="https://images.unsplash.com/photo-1621905252507-b354bc25edac?auto=format&fit=crop&q=80&w=800" alt="Professional plumber smiling" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Bounce badge -->
+                <div class="absolute -bottom-3 -right-3 z-20 bg-[#B08D57] text-[#1B2A4A] p-3 rounded-full shadow-lg border-2 border-[#F7F5F1] flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 select-none">
+                    <span class="font-serif text-lg sm:text-2xl font-bold leading-none">27</span>
+                    <span class="text-[8px] uppercase tracking-wider font-bold text-center leading-none mt-1">Years <br/>Local</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER (PIPE FITTING DESIGN) -->
+    <div class="flex items-center justify-center my-16 md:my-24 px-4 overflow-hidden select-none">
+        <div class="h-[2px] flex-grow max-w-[150px] md:max-w-[250px] bg-gradient-to-r from-transparent to-[#B08D57]"></div>
+        <svg class="w-24 h-12 mx-4 text-[#B08D57] flex-shrink-0" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="17" width="25" height="6" fill="#B08D57" fill-opacity="0.4" />
+            <line x1="5" y1="17" x2="30" y2="17" stroke="#B08D57" stroke-width="2" />
+            <line x1="5" y1="23" x2="30" y2="23" stroke="#B08D57" stroke-width="2" />
+            <rect x="30" y="11" width="7" height="18" rx="1" fill="#B08D57" stroke="#9A7742" stroke-width="1" />
+            <polygon points="44,5 76,5 82,20 76,35 44,35 38,20" fill="#B08D57" stroke="#8c6c3c" stroke-width="2" />
+            <circle cx="60" cy="20" r="4" fill="#F7F5F1" stroke="#8c6c3c" stroke-width="1" />
+            <rect x="83" y="11" width="7" height="18" rx="1" fill="#B08D57" stroke="#9A7742" stroke-width="1" />
+            <rect x="90" y="17" width="25" height="6" fill="#B08D57" fill-opacity="0.4" />
+            <line x1="90" y1="17" x2="115" y2="17" stroke="#B08D57" stroke-width="2" />
+            <line x1="90" y1="23" x2="115" y2="23" stroke="#B08D57" stroke-width="2" />
+        </svg>
+        <div class="h-[2px] flex-grow max-w-[150px] md:max-w-[250px] bg-gradient-to-l from-transparent to-[#B08D57]"></div>
+    </div>
+
+    <!-- TESTIMONIAL TRUST BAND Section -->
+    <section class="bg-[#1B2A4A] text-[#F7F5F1] py-16 md:py-24 relative overflow-hidden border-y-2 border-[#B08D57]/20 shadow-inner">
+        <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full border-[8px] border-[#B08D57]/5 index-0"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <svg class="w-14 h-14 mx-auto text-[#B08D57] opacity-60 mb-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.851h5v10h-11zm-12 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.851h5v10h-11z" />
+            </svg>
+            <blockquote class="font-serif text-xl sm:text-2xl md:text-3xl font-medium tracking-normal text-[#F7F5F1] leading-relaxed italic">
+                "Thornbridge upgraded our boiler system in Brooklin and resolved a slow basement main line drain. The craftsmanship was absolutely beautiful — neatly aligned copper pipes, tidy manifolds, and honest, old-fashioned explanation. They left our basement cleaner than they found it."
+            </blockquote>
+            
+            <div class="mt-8 flex flex-col items-center justify-center space-y-4">
+                <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-[#B08D57] shadow-xl bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&q=80&w=800" alt="Stewart MacAlister Master Plumber" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="flex items-center justify-center space-x-3">
+                    <div class="w-10 h-[1.5px] bg-[#B08D57]"></div>
+                    <cite class="font-sans text-xs sm:text-sm md:text-base font-semibold text-[#B08D57] uppercase tracking-widest not-italic">
+                        Stewart MacAlister, Baldwin Street North, Whitby
+                    </cite>
+                    <div class="w-10 h-[1.5px] bg-[#B08D57]"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CENTRAL WORK SHOWCASE GALLERY -->
+    <section id="gallery" class="bg-gradient-to-b from-[#F7F5F1] to-white py-16 md:py-24 border-t border-[#B08D57]/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
+                <div class="lg:col-span-6">
+                    <span class="text-xs font-mono font-bold tracking-widest text-[#B08D57] uppercase block mb-2">Proven Local Excellence</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight text-[#1B2A4A] leading-tight animate-pulse">
+                        Actual Worksite Projects (Whitby & Durham)
+                    </h2>
+                    <div class="h-[2px] w-20 bg-[#B08D57] mt-4"></div>
+                </div>
+                <div class="lg:col-span-6 lg:border-l lg:border-[#B08D57]/30 lg:pl-8">
+                    <p class="text-sm text-gray-600 leading-relaxed font-sans">
+                        We believe true pipe-fitting layout is structural craft. Explore authentic images of our vehicles, precision backflow certifications, and domestic warm-brass faucet installations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Gallery 1 -->
+                <div class="bg-[#F7F5F1] rounded-xl overflow-hidden shadow-md border border-[#B08D57]/10 flex flex-col justify-between group">
+                    <div class="relative h-64 overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800" alt="Service truck" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-lg font-bold text-[#1B2A4A]">Active Service Vehicles</h3>
+                        <p class="text-xs text-gray-500 mt-2">Active daily supporting families in Whitby, Port Perry and Brooklin with fully stocked plumbing valves.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 2 -->
+                <div class="bg-[#F7F5F1] rounded-xl overflow-hidden shadow-md border border-[#B08D57]/10 flex flex-col justify-between group">
+                    <div class="relative h-64 overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1585338111116-606d5c5a08e0?auto=format&fit=crop&q=80&w=800" alt="Radiant floor pipes" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-lg font-bold text-[#1B2A4A]">Hydronic Radiant Flooring</h3>
+                        <p class="text-xs text-gray-500 mt-2">Precision laid radiant manifold tubes providing uniform silent winter heating.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 3 -->
+                <div class="bg-[#F7F5F1] rounded-xl overflow-hidden shadow-md border border-[#B08D57]/10 flex flex-col justify-between group">
+                    <div class="relative h-64 overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800" alt="Bathroom layout" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-lg font-bold text-[#1B2A4A]">Luxury Sanitary Brass</h3>
+                        <p class="text-xs text-gray-500 mt-2">Pristine basin controls, solid hardware, and custom double check boundaries preventing drops.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER 2 -->
+    <div class="flex items-center justify-center my-16 md:my-24 px-4 overflow-hidden select-none">
+        <div class="h-[2px] flex-grow max-w-[150px] md:max-w-[250px] bg-gradient-to-r from-transparent to-[#B08D57]"></div>
+        <svg class="w-24 h-12 mx-4 text-[#B08D57] flex-shrink-0" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="17" width="25" height="6" fill="#B08D57" fill-opacity="0.4" />
+            <line x1="5" y1="17" x2="30" y2="17" stroke="#B08D57" stroke-width="2" />
+            <polygon points="44,5 76,5 82,20 76,35 44,35 38,20" fill="#B08D57" stroke="#8c6c3c" stroke-width="2" />
+            <circle cx="60" cy="20" r="4" fill="#F7F5F1" stroke="#8c6c3c" stroke-width="1" />
+            <rect x="83" y="11" width="7" height="18" rx="1" fill="#B08D57" stroke="#9A7742" stroke-width="1" />
+            <line x1="90" y1="17" x2="115" y2="17" stroke="#B08D57" stroke-width="2" />
+        </svg>
+        <div class="h-[2px] flex-grow max-w-[150px] md:max-w-[250px] bg-gradient-to-l from-transparent to-[#B08D57]"></div>
+    </div>
+
+    <!-- SERVICES STRIP SECTION -->
+    <section id="services" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight text-[#1B2A4A]">Complete Home Plumbing & Heating Services</h2>
+            <div class="h-[#2px] w-20 bg-[#B08D57] mx-auto mt-4 mb-5"></div>
+            <p class="text-gray-600 leading-relaxed font-sans">
+                Fully compliant with the Ontario Building Code, we install, diagnose, and register commercial & homeowner layouts neatly.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg border border-[#B08D57]/10 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 relative group flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-2 h-full bg-[#1B2A4A] group-hover:bg-[#B08D57] transition-all"></div>
+                <div>
+                    <div class="h-44 relative overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800" alt="Sink installation" class="w-full h-full object-cover transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="font-serif text-xl font-bold text-[#1B2A4A]">Residential Plumbing</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed mt-2">
+                            Complete custom fixture layups, brass valve assemblies, leak protection, water meter linkages, and kitchen/bathroom fitouts with high material tolerance.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 md:p-8 pt-0 border-t border-gray-50 mt-4">
+                    <span class="text-xs font-mono font-bold text-[#B08D57]">MASTER PLUMBERS ONLY</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg border border-[#B08D57]/10 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 relative group flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-2 h-full bg-[#1B2A4A] group-hover:bg-[#B08D57] transition-all"></div>
+                <div>
+                    <div class="h-44 relative overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800" alt="Boiler installation" class="w-full h-full object-cover transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="font-serif text-xl font-bold text-[#1B2A4A]">Hydronic Boiler Heating</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed mt-2">
+                            Sealed condensing boiler manifolds, gas line safety, radiant loops balancing, furnace retrofits, and smart thermodynamic care.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 md:p-8 pt-0 border-t border-gray-50 mt-4">
+                    <span class="text-xs font-mono font-bold text-[#B08D57]">TSSA LICENSED TECHS</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div id="drainage" class="bg-white rounded-lg border border-[#B08D57]/10 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 relative group flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-2 h-full bg-[#1B2A4A] group-hover:bg-[#B08D57] transition-all"></div>
+                <div>
+                    <div class="h-44 relative overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&q=80&w=800" alt="Basement main line valve" class="w-full h-full object-cover transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="font-serif text-xl font-bold text-[#1B2A4A]">Drainage & main line work</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed mt-2">
+                            Plumbing camera line inspection, structural roots cleaning, basement sump system backup sets, and heavy backwater flood valves.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 md:p-8 pt-0 border-t border-gray-50 mt-4">
+                    <span class="text-xs font-mono font-bold text-[#B08D57]">MECHANICAL CAMERA KITS</span>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div id="backflow" class="bg-white rounded-lg border border-[#B08D57]/10 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 relative group flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-2 h-full bg-[#1B2A4A] group-hover:bg-[#B08D57] transition-all"></div>
+                <div>
+                    <div class="h-44 relative overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800" alt="Industrial backflow valves" class="w-full h-full object-cover transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="font-serif text-xl font-bold text-[#1B2A4A]">Durham Backflow Testing</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed mt-2">
+                            Certified double check hazard certifications. We update cross-connections directly with town regulators, securing safety.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 md:p-8 pt-0 border-t border-gray-50 mt-4">
+                    <span class="text-xs font-mono font-bold text-[#B08D57]">DURHAM REGISTERED TESTER</span>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div id="green-initiatives" class="bg-white rounded-lg border border-[#B08D57]/10 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 relative group flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-2 h-full bg-[#1B2A4A] group-hover:bg-[#B08D57] transition-all"></div>
+                <div>
+                    <div class="h-44 relative overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=800" alt="Heat recovery coil" class="w-full h-full object-cover transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="font-serif text-xl font-bold text-[#1B2A4A]">Green Ecotech Solutions</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed mt-2">
+                            Waste-drain heat recovery coils, low flow custom toilets, carbon-reducing hydronic setups, and energy utility rebates support.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 md:p-8 pt-0 border-t border-gray-50 mt-4">
+                    <span class="text-xs font-mono font-bold text-[#B08D57]">ECO ENERGY CERTIFIED</span>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-[#1B2A4A] text-[#F7F5F1] rounded-lg overflow-hidden border-2 border-[#B08D57]/30 shadow-md relative group flex flex-col justify-between min-h-[350px]">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#1B2A4A]/95 via-[#1B2A4A]/80 to-[#1B2A4A]/20 pointer-events-none z-10"></div>
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800" alt="Durham coordinator" class="absolute inset-0 w-full h-full object-cover opacity-30">
+                
+                <div class="p-6 md:p-8 relative z-20">
+                    <span class="text-xs text-[#B08D57] tracking-widest font-mono uppercase font-bold">24/7 SUPPORT NETWORK</span>
+                    <h3 class="font-serif text-2xl font-bold mt-2">Leak Emergency?</h3>
+                    <p class="text-xs text-gray-300 leading-relaxed mt-3">
+                        If copper lines burst or gas vents stop, call our local Whitby office dispatch straight. We triage leaks instantly.
+                    </p>
+                </div>
+                
+                <div class="p-6 md:p-8 pt-0 relative z-20 mt-auto">
+                    <a href="tel:+19056682417" class="w-full inline-flex items-center justify-center space-x-2 bg-[#B08D57] text-[#1B2A4A] hover:bg-white font-bold py-3.5 rounded text-sm transition-all shadow-md">
+                        <span>Direct local emergency: (905) 668-2417</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- REBATES & INTERACTIVE CALCULATOR Section -->
+    <section id="rebates-advice" class="py-16 md:py-24 bg-white border-t border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-[#1B2A4A] tracking-tight">Durham Region Rebates & Advice</h2>
+                <div class="h-[2px] w-20 bg-[#B08D57] mx-auto mt-4 mb-4"></div>
+                <p class="text-sm text-gray-600 font-sans leading-relaxed">
+                    The municipality offers generous support to protect basements from backwater backups. Toggle below to calculate savings!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start animate-fade-in">
+                
+                <!-- Calculator Area (Left 5 Columns) -->
+                <div class="lg:col-span-5 bg-[#F7F5F1] p-6 sm:p-8 rounded-xl border border-[#B08D57]/30 shadow-md">
+                    <h3 class="font-serif text-xl font-bold text-[#1B2A4A] mb-4 flex items-center">
+                        <svg class="w-5 h-5 text-[#B08D57] mr-2" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-3-9.75v3.75m0 0a3 3 0 100 6h.008M15 18a3 3 0 11-6 0h6z"/></svg>
+                        Sewer & Water Rebate Estimator
+                    </h3>
+                    
+                    <div class="space-y-3 mt-4">
+                        
+                        <!-- Block 1 -->
+                        <div onclick="toggleRebate('backwaterValve', 3000)" class="rebating border border-gray-200 bg-white hover:border-[#B08D57] rounded-lg p-3.5 cursor-pointer flex justify-between items-center transition-all">
+                            <div>
+                                <span class="font-sans font-bold text-sm block text-[#1B2A4A]">Sanitary Backwater Valve</span>
+                                <span class="text-[10px] text-gray-500">Up to 80% flood mitigation rebate</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="font-mono text-sm font-bold text-[#B08D57]">+$3,000 max</span>
+                                <input type="checkbox" id="check-backwaterValve" class="w-4.5 h-4.5 rounded text-[#B08D57]" pointer-events-none>
+                            </div>
+                        </div>
+
+                        <!-- Block 2 -->
+                        <div onclick="toggleRebate('sumpPump', 2000)" class="rebating border border-gray-200 bg-white hover:border-[#B08D57] rounded-lg p-3.5 cursor-pointer flex justify-between items-center transition-all">
+                            <div>
+                                <span class="font-sans font-bold text-sm block text-[#1B2A4A]">Foundation Sump Pump setup</span>
+                                <span class="text-[10px] text-gray-500">Durham drainage isolation support</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="font-mono text-sm font-bold text-[#B08D57]">+$2,000 max</span>
+                                <input type="checkbox" id="check-sumpPump" class="w-4.5 h-4.5 rounded text-[#B08D57]" pointer-events-none>
+                            </div>
+                        </div>
+
+                        <!-- Block 3 -->
+                        <div onclick="toggleRebate('boiler', 1600)" class="rebating border border-gray-200 bg-white hover:border-[#B08D57] rounded-lg p-3.5 cursor-pointer flex justify-between items-center transition-all">
+                            <div>
+                                <span class="font-sans font-bold text-sm block text-[#1B2A4A]">Condensing Boiler Retrofit</span>
+                                <span class="text-[10px] text-gray-500">Ontario energy insulation retrofit grant</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="font-mono text-sm font-bold text-[#B08D57]">+$1,600 max</span>
+                                <input type="checkbox" id="check-boiler" class="w-4.5 h-4.5 rounded text-[#B08D57]" pointer-events-none>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Grand Total Panel -->
+                    <div class="mt-6 pt-5 border-t border-gray-200 flex justify-between items-center">
+                        <span class="font-bold text-gray-700">Estimated Saving Eligibility:</span>
+                        <span id="grand-total-display" class="font-mono text-2xl font-bold text-[#1B2A4A]">$0.00 CAD</span>
+                    </div>
+                </div>
+
+                <!-- Helpful Advice Column (Right 7 Columns) -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="font-serif text-2xl font-bold text-[#1B2A4A]">Helpful Master Plumber Advice</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-5 rounded-lg border border-gray-100">
+                            <span class="text-[10px] tracking-wider uppercase font-mono font-bold text-[#B08D57] block mb-1">Winter Prep</span>
+                            <h4 class="font-bold text-[#1B2A4A] text-sm">Ontario Frozen Pipe Isolation</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed mt-1.5">
+                                Ensure any vulnerable crawlspace copper water lines are isolated before late November. Keep inside temperature set to 15°C minimum.
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-5 rounded-lg border border-gray-100">
+                            <span class="text-[10px] tracking-wider uppercase font-mono font-bold text-[#B08D57] block mb-1">Boiler Care</span>
+                            <h4 class="font-bold text-[#1B2A4A] text-sm">Bleeding Trapped Radiator Air</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed mt-1.5">
+                                If radiators are hot on bottom but cold on top, use a standard brass wrench valve to purge trapped oxygen channels.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section id="contact" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            <!-- Left Info Panel -->
+            <div class="lg:col-span-5 space-y-6">
+                <div>
+                    <span class="text-xs font-mono font-bold tracking-widest text-[#B08D57] uppercase block mb-1">Contact dispatch</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight text-[#1B2A4A]">Schedule Durham Service</h2>
+                    <div class="h-[2px] w-16 bg-[#B08D57] mt-3"></div>
+                </div>
+
+                <p class="text-[#22262E] text-sm leading-relaxed font-sans max-w-md">
+                    Our local Whitby coordination office resolves scheduling within 2 business hours. Call us directly or fill out the master plumbing triage queue.
+                </p>
+
+                <div class="space-y-4 pt-4 border-t border-[#B08D57]/20 max-w-md">
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-[#B08D57]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25s-7.5-4.108-7.5-11.25a7.5 7.5 0 1115 0z"/></svg>
+                        <div>
+                            <span class="text-xs text-gray-500 uppercase font-mono block">Service HQ</span>
+                            <span class="font-bold text-sm text-[#1B2A4A]">Whitby & across Durham Region, Ontario</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-[#B08D57]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <div>
+                            <span class="text-xs text-gray-500 uppercase font-mono block">Office Hours</span>
+                            <span class="font-bold text-sm text-[#1B2A4A]">Mon to Fri: 7:30AM – 5:30PM (24/7 Leak Lines)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking form -->
+            <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-xl border border-gray-100 shadow-md">
+                <form id="scheduleForm" onsubmit="submitForm(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs uppercase font-mono font-bold text-gray-600 mb-1.5">Your Full Name *</label>
+                            <input type="text" id="form-name" required class="w-full bg-[#F7F5F1] border border-gray-200 rounded px-3 py-2 text-sm focus:border-[#B08D57] outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-mono font-bold text-gray-600 mb-1.5">Phone Call Number *</label>
+                            <input type="tel" id="form-phone" required class="w-full bg-[#F7F5F1] border border-gray-200 rounded px-3 py-2 text-sm focus:border-[#B08D57] outline-none">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs uppercase font-mono font-bold text-gray-600 mb-1.5">Email *</label>
+                            <input type="email" id="form-email" required class="w-full bg-[#F7F5F1] border border-gray-200 rounded px-3 py-2 text-sm focus:border-[#B08D57] outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-mono font-bold text-gray-600 mb-1.5">Whitby/Durham Street Address *</label>
+                            <input type="text" id="form-address" required class="w-full bg-[#F7F5F1] border border-gray-200 rounded px-3 py-2 text-sm focus:border-[#B08D57] outline-none">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase font-mono font-bold text-gray-600 mb-1.5">Requested Service Focus</label>
+                        <select class="w-full bg-[#F7F5F1] border border-gray-200 rounded px-3 py-2.5 text-sm focus:border-[#B08D57] outline-none">
+                            <option>Standard Plumbing Repair</option>
+                            <option>Hydronic Boiler Maintenance</option>
+                            <option>Main Line Drainage Clearance</option>
+                            <option>Durham Backflow Certifications</option>
+                            <option>Eco Green Initiatives Upgrade</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase font-mono font-bold text-gray-600 mb-1.5">Urgency Range</label>
+                        <select id="form-urgency" class="w-full bg-[#F7F5F1] border border-gray-200 rounded px-3 py-2.5 text-sm focus:border-[#B08D57] outline-none">
+                            <option>Standard Scheduled Triage</option>
+                            <option>Priority (24 hour target window)</option>
+                            <option>Active Basement Flood (Active Dispatch)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase font-mono font-bold text-gray-600 mb-1.5">Special System Notes</label>
+                        <textarea id="form-notes" rows="4" placeholder="Briefly specify valve leakage, manifold layout or backwater valve location..." class="w-full bg-[#F7F5F1] border border-gray-200 rounded px-3 py-2 text-sm focus:border-[#B08D57] outline-none"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-[#1B2A4A] hover:bg-[#B08D57] text-[#F7F5F1] font-bold py-3.5 rounded transition-all">Submit Service Request</button>
+                </form>
+
+                <div id="form-success" class="hidden text-center py-8 space-y-4">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#1B2A4A]">Request Successfully Queued</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed max-w-xs mx-auto">
+                        Our Whitby-based dispatch team has received your details and remains active to verify spacing.
+                    </p>
+                    <button onclick="resetContactForm()" class="text-xs font-bold text-[#B08D57] underline hover:text-[#1B2A4A]">Submit Another Ticket</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#1B2A4A] text-white border-t-2 border-[#B08D57]/40 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <h4 class="font-serif text-lg font-bold text-[#B08D57]">Thornbridge Plumbing</h4>
+                <p class="text-xs text-gray-400 leading-relaxed font-sans">
+                    Serving Whitby & Durham Region for 27 Years with old fashioned trade values and modern hydronic engineering layout certifications.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-serif text-sm font-bold text-[#B08D57] uppercase tracking-wider mb-3">Service Areas</h4>
+                <ul class="text-xs text-gray-400 space-y-2">
+                    <li>Whitby / Brooklin</li>
+                    <li>Oshawa / Courtice</li>
+                    <li>Port Perry</li>
+                    <li>Uxbridge / Durham</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif text-sm font-bold text-[#B08D57] uppercase tracking-wider mb-3">Schedules</h4>
+                <p class="text-xs text-gray-300">Office: 7:30AM – 5:30PM</p>
+                <p class="text-xs text-gray-400 mt-2">Emergency Hotlines are active 24/7/365</p>
+            </div>
+            <div>
+                <h4 class="font-serif text-sm font-bold text-[#B08D57] uppercase tracking-wider mb-3">Our Standards</h4>
+                <p class="text-xs text-gray-400">Durham Registered Cross-Connection Specialist #4172.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center text-[10px] text-gray-500 font-mono">
+            <span>&copy; 2026 Thornbridge Plumbing & Heating. All Rights Reserved.</span>
+            <span class="mt-2 sm:mt-0">"Old Fashioned Service in a Modern World"</span>
+        </div>
+    </footer>
+
+    <!-- Interactive script behaviors -->
+    <script>
+        function toggleMobileMenu() {
+            var menu = document.getElementById("mobile-menu");
+            var openIcon = document.getElementById("menu-icon-open");
+            var closeIcon = document.getElementById("menu-icon-close");
+            
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+                openIcon.classList.add("hidden");
+                closeIcon.classList.remove("hidden");
+            } else {
+                menu.classList.add("hidden");
+                openIcon.classList.remove("hidden");
+                closeIcon.classList.add("hidden");
+            }
+        }
+
+        // Rebate Calculator State
+        var rebateState = {
+            backwaterValve: false,
+            sumpPump: false,
+            boiler: false
+        };
+
+        function toggleRebate(key, value) {
+            rebateState[key] = !rebateState[key];
+            
+            // Toggle checklist visual checkbox state
+            var check = document.getElementById("check-" + key);
+            if (check) {
+                check.checked = rebateState[key];
+            }
+
+            // Calculate Grand Total
+            var grandTotal = 0;
+            if (rebateState.backwaterValve) grandTotal += 3000;
+            if (rebateState.sumpPump) grandTotal += 2000;
+            if (rebateState.boiler) grandTotal += 1600;
+
+            document.getElementById("grand-total-display").innerText = "$" + grandTotal.toLocaleString('en-CA', {minimumFractionDigits: 2}) + " CAD";
+        }
+
+        // Booking form action
+        function submitForm(event) {
+            event.preventDefault();
+            document.getElementById("scheduleForm").classList.add("hidden");
+            document.getElementById("form-success").classList.remove("hidden");
+        }
+
+        function resetContactForm() {
+            document.getElementById("scheduleForm").reset();
+            document.getElementById("scheduleForm").classList.remove("hidden");
+            document.getElementById("form-success").classList.add("hidden");
+        }
+    </script>
+</body>
+</html>

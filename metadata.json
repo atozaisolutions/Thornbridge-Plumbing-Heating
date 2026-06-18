@@ -1,0 +1,6 @@
+{
+  "name": "Thornbridge Plumbing & Heating",
+  "description": "Professional marketing website for Thornbridge Plumbing & Heating, a family-run business with 27 years of experience serving Whitby and the Durham Region, Ontario.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
