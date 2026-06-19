@@ -20,21 +20,21 @@ import {
   Info
 } from "lucide-react";
 
-// Image Paths (stable, high-performance static hosting CDN URLs to prevent broken links on GitHub exports)
-const copperHeroImg = "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?auto=format&fit=crop&q=80&w=1200";
-const boilerImg = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800";
-const plumberImg = "https://images.unsplash.com/photo-1621905252507-b354bc25edac?auto=format&fit=crop&q=80&w=800";
-const serviceVanImg = "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800";
-const radiantHeatingImg = "https://images.unsplash.com/photo-1585338111116-606d5c5a08e0?auto=format&fit=crop&q=80&w=800";
-const brassSinkImg = "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800";
+// Image Paths (standard ESM imports for local workspace assets to bundle nicely during build and export to GitHub)
+import copperHeroImg from "./assets/images/copper_pipes_hero_1781824379875.jpg";
+import boilerImg from "./assets/images/modern_boiler_heating_1781824390422.jpg";
+import plumberImg from "./assets/images/friendly_plumber_1781824400466.jpg";
+import serviceVanImg from "./assets/images/whitby_service_van_1781824815615.jpg";
+import radiantHeatingImg from "./assets/images/radiant_floor_heating_1781824827092.jpg";
+import brassSinkImg from "./assets/images/brass_sink_fitting_1781824839964.jpg";
 
 // New premium realistic images
-const plumberStewartImg = "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&q=80&w=800";
-const backflowAssemblyImg = "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800";
-const waterShutoffImg = "https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&q=80&w=800";
-const ecoHeatRecoveryImg = "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=800";
-const customerSupportImg = "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800";
-const bathroomLuxImg = "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800";
+import plumberStewartImg from "./assets/images/master_plumber_stewart_1781825063262.jpg";
+import backflowAssemblyImg from "./assets/images/backflow_valve_assembly_1781825075713.jpg";
+import waterShutoffImg from "./assets/images/main_water_shutoff_1781825088368.jpg";
+import ecoHeatRecoveryImg from "./assets/images/eco_heat_recovery_1781825099945.jpg";
+import customerSupportImg from "./assets/images/durham_customer_support_1781825111730.jpg";
+import bathroomLuxImg from "./assets/images/bathroom_lux_fixtures_1781825122510.jpg";
 
 // Custom Brass Pipe-Fitting/Coupling-Joint Divider
 export function PipeFittingDivider() {
